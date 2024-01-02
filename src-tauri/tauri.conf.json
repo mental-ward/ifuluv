@@ -7,7 +7,7 @@
     "distDir": "../out"
   },
   "package": {
-    "productName": "loveit",
+    "productName": "ifuluv",
     "version": "0.1.0"
   },
   "tauri": {
@@ -56,10 +56,10 @@
     "windows": [
       {
         "fullscreen": false,
-        "height": 600,
+        "height": 800,
         "resizable": true,
-        "title": "loveit",
-        "width": 800
+        "title": "ifuluv",
+        "width": 1200
       }
     ]
   }
