@@ -1,5 +1,10 @@
+'use client'
+
+import dynamic from "next/dynamic"
+
+const Stage = dynamic(() => import("./lazyStage"), { ssr: false })
 export default function Home() {
   return (
-    <div>ifuluv alpha</div>
+    <Stage />
   )
 }

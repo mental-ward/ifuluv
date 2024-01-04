@@ -5,7 +5,12 @@ export default function RootLayout({
 }) {
   return (
     <html>
-      <body>{children}</body>
+      <body style={{
+        height: "100%",
+        margin: "0",
+        padding: "0",
+        overflow: "hidden"
+      }}>{children}</body>
     </html>
   )
 }
