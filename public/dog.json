@@ -1,0 +1,40 @@
+{
+	"animations": {
+		"idle": ["pixil-frame-0.png","pixil-frame-1.png","pixil-frame-2.png"]
+	},
+	"frames": {
+		"pixil-frame-0.png":
+		{
+			"frame": {"x":0,"y":0,"w":42,"h":42},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":42,"h":42},
+			"sourceSize": {"w":42,"h":42}
+		},
+		"pixil-frame-1.png":
+		{
+			"frame": {"x":42,"y":0,"w":42,"h":42},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":42,"h":42},
+			"sourceSize": {"w":42,"h":42}
+		},
+		"pixil-frame-2.png":
+		{
+			"frame": {"x":84,"y":0,"w":42,"h":42},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":42,"h":42},
+			"sourceSize": {"w":42,"h":42}
+		}
+	},
+	"meta": {
+		"app": "https://www.codeandweb.com/texturepacker",
+		"version": "1.1",
+		"image": "dog.png",
+		"format": "RGBA8888",
+		"size": {"w":126,"h":42},
+		"scale": "1",
+		"smartupdate": "$TexturePacker:SmartUpdate:c8b7abe23c0400aecb5c2a80e1994156:0f08db362815da6077def5e7d08d8c66:ec6c3e0b9eb3cd3c555a7c426f3b0ee8$"
+	}
+}
