@@ -4,6 +4,8 @@ import { Viewport } from "pixi-viewport"
 import * as Pixi from "pixi.js"
 import { Entity } from "../graphics/Entity"
 import { StateManager } from "../state/StateManager"
+import { LayerContainer } from "../graphics/components/LayerContainer"
+import { Layer } from "../graphics/components/Layer"
 
 export class Engine {
     private graphics: Pixi.Application
@@ -23,6 +25,8 @@ export class Engine {
         this.camera = new Viewport({
             screenWidth: window.innerWidth,
             screenHeight: window.innerHeight,
+            worldWidth: window.innerWidth,
+            worldHeight: window.innerHeight,
             
             events: this.graphics.renderer.events
         })
@@ -36,7 +40,6 @@ export class Engine {
         this.graphics.stage.addChild(this.camera)
         Matter.Runner.run(this.physicsWorker, this.physics)
         this.graphics.ticker.add(this.update)
-        console.log(this.graphics.stage.children)
     }
     add(target: Pixi.Container | Pixi.AnimatedSprite | Pixi.Sprite | Entity<any>){
         this.camera.addChild(target)

@@ -21,7 +21,9 @@ export class Entity<K extends PropertyKey> extends AnimatedSprite implements Eng
     private spritesheet: Spritesheet
 
     constructor(options: EntityInitOptions<K>){
-        super(options.spritesheet.animations["idle"])
+        const sheetAnimations = options.spritesheet.animations
+        // TODO: or use enum's first key
+        super(sheetAnimations["idle"] ?? sheetAnimations[Object.keys(sheetAnimations)[0]])
 
         this.animationData = options.animationData
         this.spritesheet = options.spritesheet
@@ -30,7 +32,6 @@ export class Entity<K extends PropertyKey> extends AnimatedSprite implements Eng
         ) : null
 
         Ticker.shared.add(this.update)
-
     }
     @boundMethod
     update(time: number){

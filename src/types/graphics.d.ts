@@ -1,3 +1,9 @@
 declare namespace Graphics {
-    // TODO:
+    type Wide = {
+        width: number
+    }
+    type High = {
+        height: number
+    }
+    type Sized = Wide & High
 }
